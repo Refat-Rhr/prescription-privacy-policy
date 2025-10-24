@@ -5,29 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Prescription & Report Scanner</title>
     <style>
-        /* CSS variables for theming */
+        /* CSS variables for theming (Copied from Doctor Bangladesh CSS) */
         :root {
             --background-color: #F7F9FC;
             --text-color: #212121;
-            --heading-color: #0D47A1;
-            --link-color: #00796B;
+            --text-secondary-color: #4a5568; /* Added secondary text color */
+            --heading-color: #0D47A1; /* H2 color */
+            --h1-color: #1a202c;     /* H1 color */
+            --link-color: #3b82f6;      /* Link color from original style */
+            --border-color: #e2e8f0;    /* Border color */
+            --card-background: #ffffff; /* Container background */
+            --code-background: #f8fafc; /* Code/Contact background */
+            --accent-border: #3b82f6;   /* Accent border for contact */
         }
 
-        /* Dark mode theme */
+        /* Dark mode theme (Copied from Doctor Bangladesh CSS) */
         @media (prefers-color-scheme: dark) {
             :root {
                 --background-color: #121212;
                 --text-color: #E0E0E0;
-                --heading-color: #BB86FC;
-                --link-color: #00796B;
+                --text-secondary-color: #BDBDBD;
+                --heading-color: #BB86FC; /* H2 color */
+                --h1-color: #E0E0E0;      /* H1 color */
+                --link-color: #82b1ff;       /* Adjusted link color for dark */
+                --border-color: #424242;     /* Darker border */
+                --card-background: #1E1E1E;  /* Darker container */
+                --code-background: #2a2a2a;  /* Darker code/contact */
+                --accent-border: #82b1ff;    /* Accent border for contact */
             }
         }
-        /* Basic styling for readability */
+
+        /* Basic page styles */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            background-color: #f4f7f9;
-            color: #333;
+            background-color: var(--background-color); /* Use variable */
+            color: var(--text-color);           /* Use variable */
             margin: 0;
             padding: 0;
         }
@@ -35,32 +48,32 @@
             max-width: 800px;
             margin: 20px auto;
             padding: 25px;
-            background-color: #ffffff;
-            border: 1px solid #e2e8f0;
+            background-color: var(--card-background); /* Use variable */
+            border: 1px solid var(--border-color);   /* Use variable */
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
         h1 {
-            color: #1a202c;
+            color: var(--h1-color);           /* Use variable */
             font-size: 2em;
-            border-bottom: 2px solid #e2e8f0;
+            border-bottom: 2px solid var(--border-color); /* Use variable */
             padding-bottom: 10px;
         }
         h2 {
-            color: #2d3748;
+            color: var(--heading-color);       /* Use variable */
             font-size: 1.5em;
             margin-top: 30px;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid var(--border-color); /* Use variable */
             padding-bottom: 5px;
         }
         h3 {
-            color: #4a5568;
+            color: var(--text-secondary-color); /* Use variable */
             font-size: 1.2em;
             margin-top: 20px;
         }
         p, li {
             font-size: 1rem;
-            color: #4a5568;
+            color: var(--text-secondary-color); /* Use variable */
         }
         ul {
             padding-left: 20px;
@@ -69,17 +82,24 @@
             margin-bottom: 10px;
         }
         a {
-            color: #3b82f6;
+            color: var(--link-color);           /* Use variable */
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
         .contact-info {
-            background-color: #f8fafc;
+            background-color: var(--code-background); /* Use variable */
             padding: 15px;
             border-radius: 5px;
-            border-left: 4px solid #3b82f6;
+            border-left: 4px solid var(--accent-border); /* Use variable */
+        }
+        /* Style for <code> tag used in the policy */
+        code {
+             background-color: var(--code-background);
+             padding: 2px 5px;
+             border-radius: 3px;
+             font-family: monospace;
         }
     </style>
 </head>
